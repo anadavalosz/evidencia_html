@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+
+<head>
+  <!-- ================== ESTILOS CSS ================== -->
+
+    <link href="../plugins/DataTables-1.10.22/css/jquery.dataTables.min.css" rel="stylesheet"/>
+
+    <link href="../plugins/bootstrap-4.5.3-dist/css/bootstrap.min.css" rel="stylesheet"/>
+
+   
+
+
+
+
+
+ <!-- ================== SCRIPTS JS ================== -->
+    
+     <script src="../plugins/jQuery-3.3.1/jquery-3.3.1.min.js"></script>
+
+     <script src="../plugins/DataTables-1.10.22/js/jquery.dataTables.min.js"></script>
+
+     <script src="../plugins/bootstrap-4.5.3-dist/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+
+
+
+
+<body>
+	
+<p>
+  <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    No me pudieron quitar
+  </a>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+
+
+
+    Ejemplo Tabla
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    
+
+ <!-- ================== TABLA ================== -->
+<div>
+        <table class="table datatable" id="data_table">
+
+            <thead style="background-color: #679dc6">
+            <tr align="center">
+                <th>Tipo de Problematica</th>
+                <th>País</th>
+                <th>Ciudad</th>
+                <th>Link Informacion</th>
+            </tr>
+            </thead>
+           
+            <tbody>
+
+            <tr align="center">
+                <td><b>Extraccion de minerales</b></td>
+                <td>Sudan</td>
+                <td>Kalogi</td>
+                <td>
+                	<a target="_blank" href="https://ejatlas.org/conflict/gold-mining-sudan"> Ver Info </a>
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td><b>Explotacion petrolera</b></td>
+                <td>Colombia</td>
+                <td>San Martin de los Llanos</td>
+                <td>
+                	<a target="_blank" href="https://ejatlas.org/conflict/exploracion-petrolera-en-el-alto-ariari-meta"> Ver Info </a>
+                </td>
+            </tr>
+
+            <tr align="center">
+                <td><b>Gestion del agua</b></td>
+                <td>Noruega</td>
+                <td>Finnmark</td>
+                <td>
+                	<a target="_blank" href="https://ejatlas.org/conflict/alta-river-hydro-power-plant-norway"> Ver Info </a>
+                </td>
+            </tr>
+
+            </tbody>
+        
+
+        </table>
+
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+
+<!-- ================== SCRIPTS JS ================== -->
+<script>
+
+    $(document).ready( function () {
+    $('#data_table').DataTable({
+            //para cambiar el lenguaje a español
+            "language": {
+                "lengthMenu": "Mostrar _MENU_ registros",
+                "zeroRecords": "No se encontraron resultados",
+                "info": "Mostrando registros del _START_ al _END_ de un total de _TOTAL_ registros",
+                "infoEmpty": "Mostrando registros del 0 al 0 de un total de 0 registros",
+                "infoFiltered": "(filtrado de un total de _MAX_ registros)",
+                "sSearch": "Buscar:",
+                "oPaginate": {
+                    "sFirst": "Primero",
+                    "sLast":"Último",
+                    "sNext":"Siguiente",
+                    "sPrevious": "Anterior"
+                },
+                "sProcessing":"Procesando...",
+            }
+        });
+    });
+
+
+</script>
+    
+
+
+</body>
+
+
+</html>
+

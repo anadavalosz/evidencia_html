@@ -1,0 +1,9 @@
+@font-face{
+	font-family: 'miFuente';
+	src: url(../Fuente/before_sunday.ttf);
+}
+
+#fuente-personalizada{
+	font-family: 'miFuente';
+	font-size:30px;
+}
